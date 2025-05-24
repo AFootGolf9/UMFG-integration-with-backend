@@ -27,7 +27,7 @@ function login() {
             document.cookie = "token=" + json.token + "; path=/;"; // Set the token in a cookie
             document.cookie = "dataExpiracao=" + json.dataExpiracao + "; path=/;"; // Set the dataExpiracao in a cookie
             alert("Login successful!");
-            window.location.href = "home.html"; // Redirect to the main page
+            window.location.href = "/home.html"; // Redirect to the main page
         } else {
             alert(await data.text());
         }
